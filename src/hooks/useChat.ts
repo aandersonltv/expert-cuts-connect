@@ -47,12 +47,12 @@ export const useChat = () => {
 
     // Location and contact
     if (message.includes('address') || message.includes('location') || message.includes('where') || message.includes('phone') || message.includes('contact')) {
-      return `📍 ${BARBERSHOP_KNOWLEDGE.contact.address}\n📞 ${BARBERSHOP_KNOWLEDGE.contact.phone}\n\nWe're conveniently located on Folsom Boulevard. Call us or visit our booking page to schedule your appointment!`;
+      return `📍 ${BARBERSHOP_KNOWLEDGE.contact.address}\n📞 ${BARBERSHOP_KNOWLEDGE.contact.phone}\n\nWe're conveniently located on Folsom Boulevard. Call us or <a href="/booking" class="text-primary underline hover:text-primary/80">visit our booking page</a> to schedule your appointment!`;
     }
 
     // Booking
     if (message.includes('book') || message.includes('appointment') || message.includes('schedule')) {
-      return `I'd be happy to help you book an appointment! You can:\n\n• Visit our booking page to schedule online\n• Call us at ${BARBERSHOP_KNOWLEDGE.contact.phone}\n• Walk in during business hours\n\nWhat service are you interested in?`;
+      return `I'd be happy to help you book an appointment! You can:\n\n• <a href="/booking" class="text-primary underline hover:text-primary/80">Visit our booking page to schedule online</a>\n• Call us at ${BARBERSHOP_KNOWLEDGE.contact.phone}\n• Walk in during business hours\n\nWhat service are you interested in?`;
     }
 
     // About
@@ -66,7 +66,7 @@ export const useChat = () => {
     }
 
     // Default response
-    return `Thanks for your message! I can help you with:\n\n• 📅 Booking appointments\n• ✂️ Service information and pricing\n• 🕒 Hours and location\n• 📞 Contact information\n\nFor complex questions, feel free to call us at ${BARBERSHOP_KNOWLEDGE.contact.phone} or visit our booking page!`;
+    return `Thanks for your message! I can help you with:\n\n• 📅 Booking appointments\n• ✂️ Service information and pricing\n• 🕒 Hours and location\n• 📞 Contact information\n\nFor complex questions, feel free to call us at ${BARBERSHOP_KNOWLEDGE.contact.phone} or <a href="/booking" class="text-primary underline hover:text-primary/80">visit our booking page</a>!`;
   }, []);
 
   const sendMessage = useCallback(async (content: string) => {

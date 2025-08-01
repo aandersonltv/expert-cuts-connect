@@ -114,9 +114,8 @@ export const ChatWidget: React.FC = () => {
                       ? "bg-muted/50 text-foreground"
                       : "bg-primary text-primary-foreground"
                   )}
-                >
-                  {message.content}
-                </div>
+                  dangerouslySetInnerHTML={{ __html: message.content.replace(/\n/g, '<br>') }}
+                />
               </div>
             ))}
             
