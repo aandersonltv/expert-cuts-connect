@@ -49,8 +49,8 @@ export const ChatWidget: React.FC = () => {
   }
 
   return (
-    <Card className="fixed bottom-6 right-6 z-50 w-80 h-96 shadow-xl border-0 bg-background/95 backdrop-blur-sm animate-scale-in">
-      <CardHeader className="flex flex-row items-center justify-between p-4 bg-primary text-primary-foreground rounded-t-lg">
+    <Card className="fixed bottom-4 right-4 z-[60] w-80 max-h-[calc(100vh-2rem)] shadow-xl border-0 bg-background backdrop-blur-sm animate-scale-in flex flex-col">
+      <CardHeader className="flex flex-row items-center justify-between p-4 bg-primary text-primary-foreground rounded-t-lg flex-shrink-0">
         <div className="flex items-center space-x-2">
           <MessageCircle className="h-5 w-5" />
           <div>
@@ -68,8 +68,8 @@ export const ChatWidget: React.FC = () => {
         </Button>
       </CardHeader>
 
-      <CardContent className="p-0 flex flex-col h-full">
-        <ScrollArea className="flex-1 p-4">
+      <CardContent className="p-0 flex flex-col flex-1 min-h-0">
+        <ScrollArea className="flex-1 p-4 max-h-80">
           <div className="space-y-4">
             {messages.length === 0 && (
               <div className="space-y-3">
@@ -126,7 +126,7 @@ export const ChatWidget: React.FC = () => {
           </div>
         </ScrollArea>
 
-        <form onSubmit={handleSendMessage} className="p-4 border-t bg-background/50">
+        <form onSubmit={handleSendMessage} className="p-4 border-t bg-background flex-shrink-0">
           <div className="flex space-x-2">
             <Input
               value={inputValue}
