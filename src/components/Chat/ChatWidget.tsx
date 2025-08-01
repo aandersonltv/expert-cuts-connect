@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { useChat } from '@/hooks/useChat';
+import chatAvatar from '@/assets/chat-avatar.png';
 
 interface Message {
   id: string;
@@ -52,7 +53,11 @@ export const ChatWidget: React.FC = () => {
     <Card className="fixed bottom-4 right-4 z-[60] w-80 max-h-[calc(100vh-2rem)] shadow-xl border-0 bg-background backdrop-blur-sm animate-scale-in flex flex-col">
       <CardHeader className="flex flex-row items-center justify-between p-4 bg-primary text-primary-foreground rounded-t-lg flex-shrink-0">
         <div className="flex items-center space-x-2">
-          <MessageCircle className="h-5 w-5" />
+          <img 
+            src={chatAvatar} 
+            alt="Chat Assistant" 
+            className="h-8 w-8 rounded-full object-cover"
+          />
           <div>
             <h3 className="font-semibold">Expert Haircuts</h3>
             <p className="text-xs opacity-90">Ask us anything!</p>
