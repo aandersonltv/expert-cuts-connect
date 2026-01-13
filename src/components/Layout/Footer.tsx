@@ -10,10 +10,10 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Scissors className="h-8 w-8 text-gold-accent" />
-              <span className="text-xl font-bold">Expert Haircuts</span>
+              <span className="text-xl font-bold">Cory's Cuts</span>
             </div>
             <p className="text-sm text-gray-300">
-              Sacramento's premier barbershop delivering expert cuts, clean fades, and professional grooming services since 2015.
+              Roseville's premier barbershop delivering expert cuts, clean fades, and professional grooming services.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-gold-accent flex-shrink-0" />
-                <span className="text-sm">8379 Folsom Blvd, Sacramento, CA</span>
+                <span className="text-sm">1020 Douglas Blvd, Roseville, CA 95678</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-gold-accent flex-shrink-0" />
@@ -64,16 +64,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-gold-accent">Hours</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex justify-between">
-                <span>Mon - Fri</span>
+                <span>Sun - Mon</span>
+                <span>Closed</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Tue - Fri</span>
                 <span>9AM - 6PM</span>
               </li>
               <li className="flex justify-between">
                 <span>Saturday</span>
-                <span>9AM - 5PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday</span>
-                <span>10AM - 4PM</span>
+                <span>8AM - 4PM</span>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="border-t border-gold-accent/20 mt-8 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © 2024 Expert Haircuts. All rights reserved. | Crafted with care in Sacramento.
+            © 2024 Cory's Cuts Barbershop. All rights reserved. | Crafted with care in Roseville.
           </p>
         </div>
       </div>

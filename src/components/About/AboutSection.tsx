@@ -6,7 +6,7 @@ const AboutSection = () => {
   const stats = [
     { icon: Award, label: "Years Experience", value: "9+" },
     { icon: Users, label: "Happy Clients", value: "5000+" },
-    { icon: Clock, label: "Open Days/Week", value: "7" },
+    { icon: Clock, label: "Open Days/Week", value: "5" },
     { icon: Scissors, label: "Services", value: "10+" },
   ];
 
@@ -22,12 +22,12 @@ const AboutSection = () => {
                 <span className="text-gold-accent"> Since 2015</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                At Expert Haircuts, we're more than just a barbershop—we're a tradition. 
+                At Cory's Cuts Barbershop, we're more than just a barbershop—we're a tradition. 
                 Our skilled barbers combine time-honored techniques with modern style to deliver 
                 cuts that look sharp and feel great.
               </p>
               <p className="text-muted-foreground mb-8">
-                Located in the heart of Sacramento on Folsom Boulevard, we've been serving 
+                Located in the heart of Roseville on Douglas Boulevard, we've been serving 
                 the community with precision cuts, clean fades, and exceptional grooming services. 
                 Every client leaves feeling confident and looking their absolute best.
               </p>

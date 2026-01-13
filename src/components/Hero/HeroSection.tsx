@@ -25,7 +25,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            Sacramento's go-to barbers since 2015. Where tradition meets modern style.
+            Roseville's go-to barbers. Where tradition meets modern style.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -41,8 +41,8 @@ export const ChatWidget: React.FC = () => {
   const quickActions = [
     { label: 'Book Appointment', action: () => window.location.href = '/booking' },
     { label: 'View Services', action: () => window.location.href = '/services' },
-    { label: 'Get Directions', action: () => window.open('https://maps.google.com/?q=8379+Folsom+Boulevard+Sacramento+CA', '_blank') },
-    { label: 'Call Us', action: () => window.open('tel:+19167989163', '_self') }
+    { label: 'Get Directions', action: () => window.open('https://maps.google.com/?q=1020+Douglas+Blvd+Roseville+CA+95678', '_blank') },
+    { label: 'Call Us', action: () => window.open('tel:+19165550123', '_self') }
   ];
 
   if (!isOpen) {
@@ -68,7 +68,7 @@ export const ChatWidget: React.FC = () => {
             className="h-8 w-8 rounded-full object-cover"
           />
           <div>
-            <h3 className="font-semibold">Expert Haircuts</h3>
+            <h3 className="font-semibold">Cory's Cuts</h3>
             <p className="text-xs opacity-90">Ask us anything!</p>
           </div>
         </div>
@@ -89,7 +89,7 @@ export const ChatWidget: React.FC = () => {
               <div className="space-y-3">
                 <div className="bg-muted/50 rounded-lg p-3">
                   <p className="text-sm">
-                    👋 Welcome to Expert Haircuts! How can I help you today?
+                    👋 Welcome to Cory's Cuts Barbershop! How can I help you today?
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
