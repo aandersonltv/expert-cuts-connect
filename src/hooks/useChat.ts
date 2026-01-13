@@ -21,7 +21,7 @@ const BARBERSHOP_KNOWLEDGE = {
     'Saturday': '8AM - 4PM'
   },
   contact: {
-    phone: '(916) 555-0123',
+    phone: '(916) 862-5500',
     address: '1020 Douglas Blvd, Roseville, CA 95678',
     email: 'info@coryscuts.com'
   },

@@ -42,7 +42,7 @@ export const ChatWidget: React.FC = () => {
     { label: 'Book Appointment', action: () => window.location.href = '/booking' },
     { label: 'View Services', action: () => window.location.href = '/services' },
     { label: 'Get Directions', action: () => window.open('https://maps.google.com/?q=1020+Douglas+Blvd+Roseville+CA+95678', '_blank') },
-    { label: 'Call Us', action: () => window.open('tel:+19165550123', '_self') }
+    { label: 'Call Us', action: () => window.open('tel:+19168625500', '_self') }
   ];
 
   if (!isOpen) {
