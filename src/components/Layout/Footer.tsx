@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Scissors, Phone, MapPin, Clock } from "lucide-react";
+import { Scissors, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -15,6 +15,26 @@ const Footer = () => {
             <p className="text-sm text-gray-300">
               Roseville's premier barbershop delivering expert cuts, clean fades, and professional grooming services.
             </p>
+            <div className="flex space-x-4 pt-2">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gold-accent transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gold-accent transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
