@@ -79,7 +79,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Visit Our Shop</h2>
                 <p className="text-muted-foreground mb-8">
-                  Located in the heart of Sacramento, we're easy to find and always ready to serve you.
+                  Located in the heart of Roseville, we're easy to find and always ready to serve you.
                 </p>
               </div>
 
@@ -92,8 +92,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg">Address</h3>
                     <p className="text-muted-foreground">
-                      8379 Folsom Boulevard<br />
-                      Sacramento, CA 95826
+                      1020 Douglas Blvd<br />
+                      Roseville, CA 95678
                     </p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email</h3>
-                    <p className="text-muted-foreground">info@experthaircuts.com</p>
+                    <p className="text-muted-foreground">info@coryscuts.com</p>
                     <p className="text-sm text-gray-500">We reply within 24 hours</p>
                   </div>
                 </div>
@@ -127,9 +127,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-lg">Hours</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 5:00 PM</p>
-                      <p>Sunday: 10:00 AM - 4:00 PM</p>
+                      <p>Sun - Mon: Closed</p>
+                      <p>Tue - Fri: 9:00 AM - 6:00 PM</p>
+                      <p>Saturday: 8:00 AM - 4:00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const Contact = () => {
               Find Us on the <span className="text-gold-accent">Map</span>
             </h2>
             <p className="text-gray-300">
-              Located on Folsom Boulevard with plenty of parking available.
+              Located on Douglas Boulevard with plenty of parking available.
             </p>
           </div>
 
@@ -253,7 +253,7 @@ const Contact = () => {
             <div className="text-center text-gray-600">
               <MapPin className="h-12 w-12 mx-auto mb-4" />
               <p className="text-lg font-semibold">Interactive Map</p>
-              <p className="text-sm">8379 Folsom Boulevard, Sacramento, CA</p>
+              <p className="text-sm">1020 Douglas Blvd, Roseville, CA 95678</p>
               <p className="text-xs mt-2">
                 Map integration placeholder - would connect to Google Maps or similar service
               </p>
@@ -263,7 +263,7 @@ const Contact = () => {
           <div className="text-center mt-8">
             <Button variant="gold" asChild>
               <a 
-                href="https://maps.google.com/search/8379+Folsom+Boulevard+Sacramento+CA" 
+                href="https://maps.google.com/search/1020+Douglas+Blvd+Roseville+CA+95678" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

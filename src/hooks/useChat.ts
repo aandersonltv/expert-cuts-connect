@@ -16,16 +16,16 @@ const BARBERSHOP_KNOWLEDGE = {
     { name: 'Hot Towel Shave', price: '$25' }
   ],
   hours: {
-    'Monday - Friday': '9AM - 6PM',
-    'Saturday': '9AM - 5PM',
-    'Sunday': '10AM - 4PM'
+    'Sunday - Monday': 'Closed',
+    'Tuesday - Friday': '9AM - 6PM',
+    'Saturday': '8AM - 4PM'
   },
   contact: {
-    phone: '(916) 798-9163',
-    address: '8379 Folsom Boulevard, Sacramento, CA',
-    email: 'info@experthaircuts.com'
+    phone: '(916) 555-0123',
+    address: '1020 Douglas Blvd, Roseville, CA 95678',
+    email: 'info@coryscuts.com'
   },
-  about: 'Expert Haircuts is Sacramento\'s premier barbershop, specializing in sharp cuts, clean fades, and professional grooming services.'
+  about: 'Cory\'s Cuts Barbershop is Roseville\'s premier barbershop, specializing in sharp cuts, clean fades, and professional grooming services.'
 };
 
 export const useChat = () => {
@@ -56,13 +56,13 @@ export const useChat = () => {
     }
 
     // About
-    if (message.includes('about') || message.includes('who') || message.includes('expert haircuts')) {
+    if (message.includes('about') || message.includes('who') || message.includes('cory')) {
       return `${BARBERSHOP_KNOWLEDGE.about}\n\nWe pride ourselves on delivering exceptional cuts and creating a welcoming atmosphere for all our clients. Visit us and experience the difference!`;
     }
 
     // Greetings
     if (message.includes('hello') || message.includes('hi') || message.includes('hey') || message.includes('good')) {
-      return `Hello! Welcome to Expert Haircuts! 👋\n\nI'm here to help you with:\n• Booking appointments\n• Service information\n• Hours and location\n• Any other questions\n\nWhat can I help you with today?`;
+      return `Hello! Welcome to Cory's Cuts Barbershop! 👋\n\nI'm here to help you with:\n• Booking appointments\n• Service information\n• Hours and location\n• Any other questions\n\nWhat can I help you with today?`;
     }
 
     // Default response
